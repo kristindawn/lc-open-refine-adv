@@ -1,7 +1,7 @@
 ---
-title: "Writing Transformations"
+title: "More Transformations"
 teaching: 5
-exercises: 10
+exercises: 15
 questions:
 - "Where do I write GREL expressions in the OpenRefine interface?"
 - "How do I write a valid GREL expression?"
@@ -13,7 +13,6 @@ keypoints:
 ---
 
 ## Writing more transformations
-
 Reminder:
 GREL functions are written by giving a value of some kind (a text string, a date, a number etc.) to a GREL function. Some GREL functions take additional parameters or options which control how the function works. 
 
