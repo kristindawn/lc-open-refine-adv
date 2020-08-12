@@ -60,30 +60,25 @@ The citation column can be split into at least 5 columns, but the separators are
 In the *Split into several columns...* you can leave the default values set. 
 
 >## Where might identifying the number of columns be useful?
+>
+> Take a minute to think about situations where you might want to limit the number of columns.
 {: .challenge}
 
 You should have 4 new columns named **Citation 1**, **Citation 2**, **Citation 3**, and **Citation 4**. 
 
->## Use Clustering to clean up author data
+We can now split **Citation 4**, which contains page numbers and the year, into two columns using "(" as the separator. We will have **Citation 4 1** and **Citation 4 2**. We can now rename all of the columns - **Journal name**, **Volume**, **Issue**, **Page numbers**, **Year**. The **Year** column still has the extra **)**, so let's figure out how to get rid of it.
+
+>## Getting rid of unwanted characters
 >
->1. Split out the author names into individual cells using `Edit cells -> Split multi-valued cells`, using the pipe ( \| ) character as the separator
->2. Choose `Edit cells -> Cluster and edit` from the 'author' column.
->3. Using the `key collision` method with the `fingerprint` Keying Function, work through the clusters of values, merging them to a single value where appropriate
->4. Try changing the clustering method being used - which ones work well?
+> There are several ways to get rid of unwanted characters. Take a look at the [GREL String Functions](https://github.com/OpenRefine/OpenRefine/wiki/GREL-String-Functions) to see how we might accomplish this.  
+>
+>>## Solution
+>>1. Chomp - chomp(value,")")
+>>2. Slice - slice(value, 0, 4) **Note: GREL works on base 0 and ranges need to go to the first character you don't want to include.**
+>>3. Replace - replace(value, ")", "")
+>>4. Replace Characters - replaceChars(value, ")","")
+>{: .solution}
 {: .challenge}
 
->## Put titles into Title Case
->Use Facets and the GREL expression ```value.toTitlecase()``` to put the titles in Title Case
->1. Facet by publisher
->2. Select "Akshantala Enterprises" and "Society of Pharmaceutical Technocrats"
->3. To select multiple values in the facet use the ```include``` link that appears to the right of the facet
->4. See that the Titles for these are all in uppercase
->5.  Click the dropdown menu on the Title column
->6. Choose ```Edit cells->Transform...```
->7. In the Expression box type ```value.toTitlecase()```
->8. In the Preview pane under value.toTitlecase() you can see what the effect of running this will be
->9. Click ```OK```
->
->This is an example of using the GREL expression for a process that you can run from the Common Transform list. 
->Where would we need to use the expression instead of choosing it from the list?
-{: .checklist}
+
+
