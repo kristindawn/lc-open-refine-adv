@@ -1,21 +1,16 @@
 ---
-title: "Faceting and filtering"
-teaching: 10
-exercises: 10
+title: "More Transformations"
+teaching: 5
+exercises: 15
 questions:
-- "What is a facet in OpenRefine?"
-- "What is a filter in OpenRefine?"
-- "How can I use filters and facets to explore data in OpenRefine?"
-- "How can I easily correct common data issues in my data with OpenRefine?"
+- "How can we iteratively use transformations to clean up data?"
+- "What happens when we split data into several columns?"
 objectives:
-- "Explain what Facets and Filters are"
-- "Answer questions about the content of a data set using Facets"
-- "Use facets and filters to work with a subset of data"
-- "Correct data problems through a facet"
+- "Learn how to find new expressions in the documentation"
+- "Learn how to combine expressions to save time"
 keypoints:
-- "You can use facets and filters to explore your data"
-- "You can use facets and filters work with a subset of data in OpenRefine"
-- "You can easily correct common data issues from a Facet"
+- "There are mulitple expressions that you can use to get the same result"
+- "Sometimes adding columns can help with sticky data problems"
 ---
 
 ## Writing more transformations
