@@ -1,15 +1,21 @@
 ---
-title: "More Transformations"
-teaching: 5
-exercises: 15
+title: "Faceting and filtering"
+teaching: 10
+exercises: 10
 questions:
-- "Where do I write GREL expressions in the OpenRefine interface?"
-- "How do I write a valid GREL expression?"
+- "What is a facet in OpenRefine?"
+- "What is a filter in OpenRefine?"
+- "How can I use filters and facets to explore data in OpenRefine?"
+- "How can I easily correct common data issues in my data with OpenRefine?"
 objectives:
-- "Explain how to write one's own transformations using GREL"
+- "Explain what Facets and Filters are"
+- "Answer questions about the content of a data set using Facets"
+- "Use facets and filters to work with a subset of data"
+- "Correct data problems through a facet"
 keypoints:
-- "You can alter data in OpenRefine based on specific instructions"
-- "You can preview the results of your GREL expression"
+- "You can use facets and filters to explore your data"
+- "You can use facets and filters work with a subset of data in OpenRefine"
+- "You can easily correct common data issues from a Facet"
 ---
 
 ## Writing more transformations
