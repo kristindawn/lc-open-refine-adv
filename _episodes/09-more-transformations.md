@@ -25,7 +25,7 @@ GREL supports two types of syntax:
 
 Either is valid, and which is used is completely down to personal preference. In these notes the first syntax is used.
 
-###Two ways to split data 
+### Two ways to split data 
 
 Ideally, we would only have one piece and one type of information in a cell in a table. As we know, this isn't always the case with data we get from other sources. There are two different ways we can separate data in a cell in OpenRefine:
 * Creating new rows in the same column ```Edit cells > Split multi-valued cells...```
@@ -45,6 +45,7 @@ Ideally, we would only have one piece and one type of information in a cell in a
 > 1. How many different kinds of data are in the column?
 > 2. How many different separators are there?
 > 3. Are the data all formatted the same? Can we assume if we split the data our columns will have the same category of data for each row?
+>
 >>## Solution
 >>1. There are 5 kinds of data, so we will need at least 5 columns.
 >>2. There are 2 obvious separators (*,*, *)*) and 1 that may not have been so obvious (*-*). 
@@ -52,7 +53,7 @@ Ideally, we would only have one piece and one type of information in a cell in a
 >{: .solution}
 {: .challenge}
 
-###Splitting one column into several columns
+### Splitting one column into several columns
 
 The citation column can be split into at least 5 columns, but the separators aren't the same for all types of data. This is going to be an iterative process where the order in which we do things is important. The separator to create 4 of the 5 columns is *,*, so we will separate the columns using that first. 
 
@@ -61,7 +62,7 @@ In the *Split into several columns...* you can leave the default values set.
 >## Where might identifying the number of columns be useful?
 {: .challenge}
 
-You should have 4 new columns named *Citation 1*, *Citation 2*, *Citation 3*, and *Citation 4*. 
+You should have 4 new columns named **Citation 1**, **Citation 2**, **Citation 3**, and **Citation 4**. 
 
 >## Use Clustering to clean up author data
 >
